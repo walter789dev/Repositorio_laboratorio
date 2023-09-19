@@ -1,7 +1,6 @@
-package poo;
 import java.util.Scanner;
 
-public class PracticaJava {
+public class RepasoParcial {
 	
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
