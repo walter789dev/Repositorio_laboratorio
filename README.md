@@ -6,3 +6,4 @@ Se encuentran disponibles los siguientes trabajos:
 - Repaso Parcial
 - Trabajo Practico N° 6
 - Ejercitacion de Arreglos
+- Algoritmos de Ordenamiento
