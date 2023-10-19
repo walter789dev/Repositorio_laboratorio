@@ -8,4 +8,5 @@ Se encuentran disponibles los siguientes trabajos:
 - Ejercitacion de Arreglos
 - Trabajo Practico N°7
 - Trabajo Practico N°8
+- Clases
 - Trabajo Practico N°9
