@@ -8,3 +8,4 @@ Se encuentran disponibles los siguientes trabajos:
 - Ejercitacion de Arreglos
 - Algoritmos de Ordenamiento
 - Trabajo Practico N°8
+- Trabajo Practico N°9
