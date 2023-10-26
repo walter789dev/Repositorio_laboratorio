@@ -11,4 +11,4 @@ Se encuentran disponibles los siguientes trabajos:
 - Clases
 - Trabajo Practico N°9
 - Trabajo Practico N°10
-- Trabajo Practico N°11 parte 1
+- Trabajo Practico N°11 (parte 1 y parte 2)
