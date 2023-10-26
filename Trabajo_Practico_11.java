@@ -50,6 +50,75 @@ public class Trabajo_Practico_11_parte_1 {
 		
 		System.out.println("Total sin Impuestos: " + df.format(new_factura.get_subtotal()));
 		System.out.println("Total con Impuestos: " + df.format(new_factura.get_total()));
+
+		// 4:
+		ArrayList numbers_d = new ArrayList();
+		for (int i = 0; i < 20; i++) {
+			System.out.println("Ingrese el número para posicion " + ( i + 1) + ": ");
+			double number = input.nextDouble();
+			numbers_d.add(number);
+		}
+		double max = get_max_double(numbers_d);
+		double min = get_min_double(numbers_d);
+		
+		System.out.println("El mayor número ingresado es: " + max);
+		System.out.println("El menor número ingresado es: " + min);
+		System.out.println("La diferencia entre el maximo y minimo es: " + (max - min));
+		
+		// 5:
+		ArrayList numbers_i = new ArrayList();
+		for (int i = 0; i < 20; i++) {
+			int numero = (int)(Math.random()*100+1);
+			numero = numero % 2 == 1 ? numero + 1 : numero;
+			numbers_i.add(numero);
+		}
+		
+		int promedio = get_avg(numbers_i);
+		System.out.println("La cantidad de numeros iguales: " + get_op_numbers(numbers_i, promedio, "="));
+		System.out.println("La cantidad de numeros menores: " + get_op_numbers(numbers_i, promedio, "<"));
+		System.out.println("La cantidad de numeros mayores: " + get_op_numbers(numbers_i, promedio, ">"));
+	}
+
+	public static double get_max_double(ArrayList A){
+		double max = A.get(0);
+		for (Double d: A) if (max < d) max = d;
+		return max;
+	}
+	
+	public static double get_min_double(ArrayList A){
+		double min = A.get(0);
+		for (Double d: A) if (min > d) min = d;
+		return min;
+	}
+	
+	public static int get_avg(ArrayList A){
+		int avg = 0;
+		int count = 0;
+		for (Integer i: A) {
+			avg += i;
+			count++;
+		}
+		return avg / count;
+	}
+	
+	public static int get_op_numbers(ArrayList A, int promedio, String opt){
+		int count = 0;
+		for (Integer i: A) {
+			if (opt.equals("<")){
+				if(i < promedio) count++;
+			}
+			else if (opt.equals(">")){
+				if(i > promedio) count++;
+			}
+			else if (opt.equals("=")){
+				if(i == promedio) count++;
+			}
+			else{
+				System.out.println("Opeacion invalida");
+				break;
+			}
+		}
+		return count;
 	}
 
 }
